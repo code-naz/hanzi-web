@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model HanziEntry {
+  id                        Int      @id @default(autoincrement())
+  sourceId                  String   @unique @map("source_id") @db.VarChar(32)
+  level                     Int      @db.TinyInt
+
+  simplified                String   @db.VarChar(50)
+  pinyin                    String   @db.VarChar(100)
+  pinyinNormalized          String   @map("pinyin_normalized") @db.VarChar(120)
+  meaning                   String   @db.Text
+
+  sentence                  String   @db.Text
+  sentencePinyin            String   @map("sentence_pinyin") @db.Text
+  sentencePinyinNormalized   String   @map("sentence_pinyin_normalized") @db.VarChar(180)
+  sentenceNormalized        String   @map("sentence_normalized") @db.Text
+  sentenceMeaning           String   @map("sentence_meaning") @db.Text
+  category                  String   @db.VarChar(100)
+
+  createdAt                 DateTime @default(now()) @map("created_at")
+  updatedAt                 DateTime @updatedAt @map("updated_at")
+
+  @@index([simplified])
+  @@index([pinyinNormalized])
+  @@index([level])
+  @@index([category])
+  @@map("hanzi_entries")
+}
