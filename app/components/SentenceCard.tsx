@@ -18,7 +18,7 @@ export default function SentenceCard({ item }: Props) {
       className="group w-full rounded-3xl border border-slate-200 bg-white p-4 text-left shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900 sm:p-5"
     >
       <div className="space-y-2">
-        <h3 className="text-3xl font-semibold leading-tight text-slate-900 dark:text-white sm:text-4xl">
+        <h3 className="text-2xl font-semibold leading-tight text-slate-900 dark:text-white sm:text-3xl">
           {item.sentence}
         </h3>
 

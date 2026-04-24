@@ -34,7 +34,7 @@ export default async function HomePage() {
 
               <Link
                 href="/sentences"
-                className="inline-flex flex-1 min-w-0 items-center justify-center rounded-2xl bg-white px-4 py-3 font-semibold text-slate-900 transition hover:border-[#ff9900] hover:text-[#ff9900] dark:bg-slate-950 dark:text-white sm:px-6"
+                className="inline-flex flex-1 min-w-0 items-center justify-center rounded-2xl border border-slate-200 bg-white px-4 py-3 font-semibold text-slate-900 transition hover:border-[#ff9900] hover:text-[#ff9900] dark:border-slate-800 dark:bg-slate-950 dark:text-white sm:px-6"
               >
                 Browse sentences
               </Link>
