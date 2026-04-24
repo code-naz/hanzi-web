@@ -11,6 +11,7 @@ const navItems = [
   { href: "/", label: "Home" },
   { href: "/words", label: "Words" },
   { href: "/sentences", label: "Sentences" },
+  { href: "/write-tutorial", label: "Write Tutorial" },
 ];
 
 export default function Navbar() {
@@ -80,10 +81,6 @@ export default function Navbar() {
             );
           })}
 
-          <span className="rounded-2xl px-4 py-2 text-sm font-medium text-slate-400 dark:text-slate-600">
-            Write Tutorial
-          </span>
-
           <ThemeToggle />
         </nav>
       </div>
@@ -113,10 +110,6 @@ export default function Navbar() {
                 </Link>
               );
             })}
-
-            <span className="rounded-2xl bg-slate-50 px-4 py-3 text-sm font-medium text-slate-400 dark:bg-slate-900 dark:text-slate-600">
-              Write Tutorial
-            </span>
           </div>
         </div>
       </div>
