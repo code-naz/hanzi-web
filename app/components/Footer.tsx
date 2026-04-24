@@ -19,8 +19,7 @@ export default function Footer() {
         </div>
 
         <p className="mt-4 text-sm text-slate-500 dark:text-slate-400">
-          © 2026 Xuexi Hanzi. Building with{" "}
-          <span className="text-[#ff9900]">♥</span> Next JS.
+          © 2026 Xuexi Hanzi. All Rights Reserved.
         </p>
       </div>
     </footer>
